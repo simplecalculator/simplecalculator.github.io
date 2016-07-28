@@ -2,11 +2,13 @@
 <html lang="en">
   <head>
   <meta charset="UTF-8">
-  <title>DDR investment banking</title>
+  <title>Simple calculator</title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/jpg">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+	<div class="container">
 	<section class="calculator">
 		<input type="text" id="deposit">
 		<button id="button0" value="0">0</button>
@@ -31,13 +33,29 @@
 		<button id="itog" value="wefw" onclick="myFunction()">=</button>
 		<div id="result">	</div>	
 	</section>
-	
-<section>
-<p>Сколько процентов a от b</p>
-	<input type="text" class="countA">
-	<input type="text"  class="countB">
-	<button id="percent" onclick="countPircent()">Расчитать</button>
-</section>
+
+<div>
+	<h2>Вычисление процентов</h2>	
+	<section>
+		<p>Насколько процентов число <span class="styleVariable">a</span> меньше числа <span class="styleVariable">b</span></p>
+		<input type="text" class="countA">
+		<input type="text"  class="countB">
+		<button id="percent" onclick="countPircent()">Расчитать</button>
+	</section>
+	<section>
+		<p>Чему будет равно число, если оно составляет <span class="styleVariable">a%</span> от числа <span class="styleVariable">b</span></p>
+		<input type="text" class="countA">
+		<input type="text"  class="countB">
+		<button id="percent" onclick="countPircent()">Расчитать</button>
+	</section>
+	<section>
+		<p>Найти число x если <span class="styleVariable">a%</span> от этого числа равны <span class="styleVariable">b</span></p>
+		<input type="text" class="countA">
+		<input type="text"  class="countB">
+		<button id="percent" onclick="countPircent()">Расчитать</button>
+	</section>
+
+</div>
 
 
 <script type="text/javascript" src="js/common.js"></script>

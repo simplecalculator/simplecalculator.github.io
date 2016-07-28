@@ -1,8 +1,23 @@
 
+body {
+	background-color: #E7DAFF;
+}
 
-.calculator {
+.container {
+	width: 90%;
 	margin: 0 auto;
-	width: 700px;
-	height: 500px;
-	background-color: #EDB9B9;
+}
+
+
+h2 {
+	color: #fff;
+	font-size: 20px;
+}
+
+.styleVariable {
+	font-style: italic;
+	font-weight: bold;
+	color: #3746A6;
+	text-decoration: underline;
+	text-transform: uppercase;
 }

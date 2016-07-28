@@ -192,38 +192,37 @@
 
 
 //Найти число x если a % от этого числа равны b
-
-// percent.onclick = function() {
-//   var a = parseInt(document.querySelector('.countA').value);
-//   var b = parseInt(document.querySelector('.countB').value);
-// var x, results;
-
-//   x = 100/a*b;
-//   results=x;
-// document.getElementById('result').innerHTML = results;
-// }
-
-
-// вычисления процентов, чему будет равно число, если оно составляет a% от числа b
-
-// percent.onclick = function() {
-//   var a = parseInt(document.querySelector('.countA').value);
-//   var b = parseInt(document.querySelector('.countB').value);
-// var x, results;
-
-//   x = a/100*b;
-//   results=x;
-// document.getElementById('result').innerHTML = results;
-// }
-
-// насколько процентов число a меньше числа b 
-
 percent.onclick = function() {
   var a = parseInt(document.querySelector('.countA').value);
   var b = parseInt(document.querySelector('.countB').value);
 var x, results;
 
-  x = (b - a)/b*100;
+  x = 100/a*b;
   results=x;
+document.getElementById('result').innerHTML = results;
+}
+
+
+//чему будет равно число, если оно составляет a% от числа b
+percent.onclick = function() {
+  var a = parseInt(document.querySelector('.countA').value);
+  var b = parseInt(document.querySelector('.countB').value);
+var x, results;
+
+  x = a/100*b;
+  results=x;
+document.getElementById('result').innerHTML = results;
+}
+
+
+
+// насколько процентов число a меньше числа b 
+percent.onclick = function() {
+  var a = parseInt(document.querySelector('.countA').value);
+  var b = parseInt(document.querySelector('.countB').value);
+  var results;
+
+  results = ((b - a)/b*100).toFixed(2);
+
 document.getElementById('result').innerHTML = results;
 }
