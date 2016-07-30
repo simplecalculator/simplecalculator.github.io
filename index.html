@@ -6,55 +6,182 @@
   <link rel="shortcut icon" href="img/favicon.png" type="image/jpg">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Comfortaa:700|Droid+Serif:400italic|PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 </head>
 <body>
-	<div class="container">
-	<section class="calculator">
-		<input type="text" id="deposit">
-		<button id="button0" value="0">0</button>
-		<button id="button1" value="1">1</button>
-		<button id="button2" value="2">2</button>
-		<button id="button3" value="3">3</button>
-		<button id="button4" value="4">4</button>
-		<button id="button5" value="5">5</button>
-		<button id="button6" value="6">6</button>
-		<button id="button7" value="7">7</button>
-		<button id="button8" value="8">8</button>
-		<button id="button9" value="9">9</button>
-
-<button id="plus">+</button>
-<button class="minus">-</button>
-
-
-
-
-
-
-		<button id="itog" value="wefw" onclick="myFunction()">=</button>
-		<div id="result">	</div>	
+<div class="container">
+	<section class="calculator titleStyle mainTag">
+		<h2>Калькулятор</h2>
 	</section>
+	<div class="calculator-hidden mainBlockStyle hiddenBlock">
+		<p>Текст вычисления</p>
+	</div>
 
-<div>
-	<h2>Вычисление процентов</h2>	
+
 	<section>
-		<p>Насколько процентов число <span class="styleVariable">a</span> меньше числа <span class="styleVariable">b</span></p>
-		<input type="text" class="countA">
-		<input type="text"  class="countB">
-		<button id="percent" onclick="countPircent()">Расчитать</button>
-	</section>
-	<section>
-		<p>Чему будет равно число, если оно составляет <span class="styleVariable">a%</span> от числа <span class="styleVariable">b</span></p>
-		<input type="text" class="countA">
-		<input type="text"  class="countB">
-		<button id="percent" onclick="countPircent()">Расчитать</button>
-	</section>
-	<section>
-		<p>Найти число x если <span class="styleVariable">a%</span> от этого числа равны <span class="styleVariable">b</span></p>
-		<input type="text" class="countA">
-		<input type="text"  class="countB">
-		<button id="percent" onclick="countPircent()">Расчитать</button>
+		<div class="change titleStyle mainTag">
+			<h2>Перевод из одной системы в другую</h2>
+		</div>
+		<div class="change-hidden mainBlockStyle hiddenBlock">
+			<h3>Преобразование из системы исчесления <span class="styleVariable">10</span> в другую систему исчисления</h3>
+			<label>Число: </label><input type="text" class="countAcd styleInput">
+			<label>Система исчисления: </label><input type="text"  class="countBcd styleInput">
+			<button id="changeSystem" class="btnStyle">Расчитать</button>
+			<div class="resultBlock" id="resultChange">
+				<p>Число <span class="styleresVar" id="res1"></span> в системе исчисления <span class="styleresVar" id="res12"></span> будет выглядеть: <span class="styleresult" id="res123"></span></p>
+			</div>
+		</div>
 	</section>
 
+
+
+
+
+	<section>
+		<div class="percentHeader titleStyle mainTag">
+			<h2>Процентные вычесления</h2>
+		</div>
+		<div class="percentBlock mainBlockStyle hiddenBlock">
+			<div>
+				<h3>Cколько процентов занимет число <span class="styleVariable">a</span> от числа <span class="styleVariable">b</span></h3>
+				<input type="text" class="countA">
+				<input type="text"  class="countB">
+				<button id="percentVersionA" class="btnStyle">Расчитать</button>
+			</div>
+			<div>
+				<h3>Насколько процентов число <span class="styleVariable">a</span> меньше числа <span class="styleVariable">b</span></h3>
+				<input type="text" class="countA">
+				<input type="text"  class="countB">
+				<button id="percentVersionB" class="btnStyle">Расчитать</button>
+			</div>
+			<div>
+				<h3>Чему будет равно число, если оно составляет <span class="styleVariable">a%</span> от числа <span class="styleVariable">b</span></h3>
+				<input type="text" class="countA">
+				<input type="text"  class="countB">
+				<button id="percentVersionC" class="btnStyle">Расчитать</button>
+			</div>
+			<div>
+				<h3>Найти число x если <span class="styleVariable">a%</span> от этого числа равны <span class="styleVariable">b</span></h3>
+				<input type="text" class="countA">
+				<input type="text"  class="countB">
+				<button id="percentVersionD" class="btnStyle">Расчитать</button>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+<!-- Все переменные присвоенны -->
+	<section>
+		<div class="powerHeader titleStyle mainTag">
+			<h2>Возведение в степень и корень</h2>
+		</div>
+		<div class="powerBlock mainBlockStyle hiddenBlock">
+			<h3>Возвести число <span class="styleVariable">a</span> в степень <span class="styleVariable">b</span></h3>
+			<label>Число (a): </label><input type="text" class="raisPowA styleInput">
+			<label>Степень (b): </label><input type="text"  class="raisPowB styleInput">
+			<button id="raisedPower"  class="btnStyle">Расчитать</button>
+			<div class="resultBlock" id="showResultRaisPow">
+				<p>Число <span class="styleresVar" id="raisPowA"></span> возведенное в степень <span class="styleresVar" id="raisPowB"></span> будет равно: <span class="styleresult" id="resultRaisedPower"></span></p>
+			</div>
+
+
+			<h3>Расчитать корень <span class="styleVariable">a</span> от числа <span class="styleVariable">b</span></h3>
+			<label>Корень (a): </label><input type="text" class="calcRootA styleInput">
+			<label>Число (b): </label><input type="text"  class="calcRootB styleInput">
+			<button id="calculateRoot" class="btnStyle">Расчитать</button>
+			<div class="resultBlock" id="showResultCalcRoot">
+				<p>Корень <span class="styleresVar" id="rootA"></span> из числа <span class="styleresVar" id="rootB"></span> будет равен: <span class="styleresult" id="resultRoot"></span></p>
+			</div>
+
+		</div>
+	</section>
+
+
+
+
+
+<!-- Все переменные присвоенны -->
+	<section>
+		<div class="depositHeader titleStyle mainTag">
+			<h2>Депозитный и кредитный калькулятор</h2>
+		</div>
+		<div class="depositBlock mainBlockStyle hiddenBlock">
+			<h3>Рассчет доходности депозита за период</h3>
+			<div>	
+				<p class="depositInputLabel">Начальная сумма инвестиций: </p>
+				<input type="text" id="deposit" placeholder="Сумма.." class="styleInput">
+			</div>
+
+			<div>
+				<p class="depositInputLabel">Доходность инвестиций: </p>
+				<input type="text" id="percent" placeholder="Ствка.."  class="styleInput">
+			</div>
+
+			<div>
+				<p class="depositInputLabel">Срок вклада (лет):</p>
+				<input type="text" id="term" placeholder="Срок.." class="styleInput">
+			</div>
+
+			<div>
+				<p class="depositInputLabel">Пополенние: </p>
+				<select id="Replenish" class="styleInput">
+				  <option value="1">Нет</option>
+				  <option value="2">Раз в 1 мес.</option>
+				  <option value="3">Раз в 3 мес.</option>
+				  <option value="4">Раз в 6 мес.</option>
+				</select>
+			</div>
+
+			<div>
+				<p class="depositInputLabel">Сумма пополнения: </p>
+				<input type="text" id="sumReplenish" placeholder="Пополнение.." class="styleInput">
+			</div>
+
+			<div>
+				<p class="depositInputLabel">Денежная единица:</p>
+				<select id="currency" class="styleInput">
+				  <option value="1">Рубль</option>
+				  <option value="2">Доллар США</option>
+				  <option value="3">Евро</option>
+				  <option value="4">Фунт стерлингов</option>
+				  <option value="5">Японская иена</option>
+				</select>
+			</div>
+
+			<div>
+				<p class="depositInputLabel">Капитализация вклада: </p>
+				<input type="checkbox" id="reinvestment" checked>
+			</div>
+
+			<button class="btnStyle" id="countDeposit">Расчитать</button>
+			<div id="resultCountDeposit"></div>
+			<div class="result" id="errorCountDeposit">Заполните все поля</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+	</section>
 </div>
 
 

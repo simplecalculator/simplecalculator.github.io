@@ -1,23 +1,274 @@
-
 body {
-	background-color: #E7DAFF;
+	background-color: #FFFEFD;
+	font-family: 'PT Sans', sans-serif;
+}
+
+p {
+	margin: 0;
 }
 
 .container {
-	width: 90%;
+	width: 85%;
 	margin: 0 auto;
 }
 
+.titleStyle {
+	margin-bottom: 7px;
+	cursor: pointer;
+	-webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+         -o-border-radius: 10px;
+            border-radius: 10px;
+}
 
 h2 {
+	margin: 0;
+	font-family: 'Comfortaa', cursive;
+	font-weight: bold;
 	color: #fff;
-	font-size: 20px;
+	font-size: 24px;
+	padding: 30px 0;
+	text-align: center;
+}
+
+h3 {
+	font-size: 16px;
+	padding-left: 30px;
 }
 
 .styleVariable {
 	font-style: italic;
 	font-weight: bold;
 	color: #3746A6;
-	text-decoration: underline;
-	text-transform: uppercase;
+	font-size: 19px;
 }
+
+
+.calculator {
+	background-color: #b75993;
+}
+
+.calculator-hidden {
+	background-color: #DB9DC3;
+	margin-bottom: 10px;
+}
+
+.change {
+	background-color: #65b2bd;
+}
+
+.change-hidden {
+	background-color: #A5D7DE;
+
+}
+
+.percentHeader {
+	background-color: #a0c26f;
+}
+
+.percentBlock {
+	background-color: #CBE1AC;
+}
+
+
+
+
+
+.powerHeader {
+	background-color: #c79350;
+}
+
+.powerBlock {
+	background-color: #E3C398;
+}
+
+.depositHeader {
+	background-color: #c45656;
+}
+
+.depositBlock {
+	background-color: #E29C9C;
+}
+
+.depositBlock .styleInput {
+	margin-top: 5px;
+	font-weight: normal;
+}
+
+.depositBlock .btnStyle {
+	display: inline-block;
+	margin-left: 12%;
+	margin-top: 20px;
+}
+
+.depositInputLabel {
+	display: inline-block;
+	width: 20%;
+ }
+
+.mainBlockStyle {
+	padding: 20px 0 40px 30px;
+	min-height: 100px;
+	-webkit-border-radius: 0 0 10px 10px;
+       -moz-border-radius: 0 0 10px 10px;
+         -o-border-radius: 0 0 10px 10px;
+            border-radius: 0 0 10px 10px;
+
+}
+
+
+/*.hiddenBlock {
+	display: none;
+}*/
+
+
+
+.resultBlock {
+	background-color: #fff;
+	border: 2px solid #B2AABF;
+	width: 40%;
+	margin: 10px auto;
+	text-align: right;
+	border-radius: 10px;
+	padding-right: 15px;
+	display: none;
+}
+
+.styleresVar {
+	font-style: italic;
+	font-weight: bold;
+	font-size: 18px;
+	color: blue;
+}
+
+.styleresult {
+	font-size: 22px;
+	font-family: 'Droid Serif', serif;
+	font-style: italic;
+	padding-left: 3px;
+	color: red;
+}
+.styleInput {
+	border: 1px solid #88838F;
+	border-radius: 7px;
+	text-align: center;
+	font-weight: bold;
+	color: #590C2D;
+	width: 12%;
+}
+
+
+
+.btnStyle {
+	margin-left: 5px;
+	padding: 0 12px;
+	background: #FFFFC0;
+	outline: 0;
+	border: 1px solid #88838F;
+	cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    
+}
+
+.btnStyle:hover {
+	background: #FFFF8C;
+	box-shadow: 0 3px 4px rgba(0,0,0,.2);
+}
+
+.btnStyle:active {
+	box-shadow: 0 3px 4px rgba(0,0,0,.2) inset;
+	background: #F0F089;
+}
+
+input:focus, 
+textarea:focus,
+select:focus {
+	outline: 0;
+ }
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.container {
+	width: 100%;
+}
+h2 {
+	margin: 0;
+	font-family: 'Comfortaa', cursive;
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 25px 0;
+	text-align: center;
+}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.container {
+	width: 100%;
+}
+h2 {
+	margin: 0;
+	font-family: 'Comfortaa', cursive;
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 25px 0;
+	text-align: center;
+}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.container {
+	width: 100%;
+}
+h2 {
+	margin: 0;
+	font-family: 'Comfortaa', cursive;
+	color: #fff;
+	font-weight: bold;
+	font-size: 16px;
+	padding: 20px 0;
+	text-align: center;
+}
+}
+
+
+
+для заголовков
+font-family: 'Comfortaa', cursive;
+для результатов
+font-family: 'Droid Serif', serif;
+для текста
+font-family: 'PT Sans', sans-serif;
