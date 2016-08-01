@@ -11,25 +11,65 @@
 </head>
 <body>
 <div class="container">
-	<section class="calculator titleStyle mainTag">
-		<h2>Калькулятор</h2>
-	</section>
-	<div class="calculator-hidden mainBlockStyle hiddenBlock">
-		<p>Текст вычисления</p>
-	</div>
-
-
 	<section>
-		<div class="change titleStyle mainTag">
-			<h2>Перевод из одной системы в другую</h2>
+		<div class="calculator titleStyle mainTag">
+			<h2>Калькулятор</h2>
 		</div>
-		<div class="change-hidden mainBlockStyle hiddenBlock">
-			<h3>Преобразование из системы исчесления <span class="styleVariable">10</span> в другую систему исчисления</h3>
-			<label>Число: </label><input type="text" class="countAcd styleInput">
-			<label>Система исчисления: </label><input type="text"  class="countBcd styleInput">
-			<button id="changeSystem" class="btnStyle">Расчитать</button>
-			<div class="resultBlock" id="resultChange">
-				<p>Число <span class="styleresVar" id="res1"></span> в системе исчисления <span class="styleresVar" id="res12"></span> будет выглядеть: <span class="styleresult" id="res123"></span></p>
+		<div class="calculator-hidden mainBlockStyle hiddenBlock">
+		<div class="calcBlock">
+			<div class="row">
+				<input type="text" id="cakculateInput" placeholder="0">
+				<button id="clear" value="" class="clearBtn">C</button>
+			</div>
+
+
+			<div class="row">
+				<button id="button7" value="7" class="numberStyle">7</button>
+				<button id="button8" value="8" class="numberStyle">8</button>
+				<button id="button9" value="9" class="numberStyle">9</button>
+				<button id="plus" class="numberStyle">+</button>
+				<button id="multiply" class="numberStyle">*</button>
+			</div>
+			<div class="row">
+				<button id="button4" value="4" class="numberStyle">4</button>
+				<button id="button5" value="5" class="numberStyle">5</button>
+				<button id="button6" value="6" class="numberStyle">6</button>
+				<button id="minus" class="numberStyle">-</button>
+				<button id="divided" class="numberStyle">÷</button>
+			</div>
+			<div class="row">
+				<button id="button1" value="1" class="numberStyle">1</button>
+				<button id="button2" value="2" class="numberStyle">2</button>
+				<button id="button3" value="3" class="numberStyle">3</button>
+				<button id="bktLeft" value="(" class="numberStyle">(</button>
+				<button id="bktRight" value=")" class="numberStyle">)</button>
+			</div>
+			<div class="row">
+				<button id="button0" value="0" class="numberStyle">0</button>
+				<button id="dot" value="." class="numberStyle">.</button>
+				<button id="equally" class="numberEqually">=</button>
+			</div>
+		</div>
+		</div>
+	</section>
+
+
+
+<!-- Все переменные присвоенны все работает-->
+	<section>
+		<div class="numberSystem titleStyle mainTag">
+			<h2>Перевод из одной системы счисления в другую</h2>
+		</div>
+		<div class="numberSystemBlock mainBlockStyle hiddenBlock">
+			<h3>Преобразование из системы счесления <span class="styleVariable">10</span> в систему счисления <span class="styleVariable">b</span></h3>
+			<label>Число (a): </label><input type="text" class="numberSystA styleInput">
+			<label>Система исчисления (b): </label><input type="text"  class="numberSystB styleInput">
+			<button id="changeNumbSystem" class="btnStyle">Расчитать</button>
+			<div class="resultBlock" id="resultchangeNumbSystem">
+				<p>Число <span class="styleresVar" id="changeNumbA"></span> в системе исчисления <span class="styleresVar" id="changeNumbB"></span> будет выглядеть: <span class="styleresult" id="changeNumbResult"></span></p>
+			</div>
+			<div class="errorBlock" id="errorChangeNumbSystem">
+				<p>Для вычисления необходимо заполнить все поля!</p>
 			</div>
 		</div>
 	</section>
@@ -37,7 +77,7 @@
 
 
 
-
+<!-- Все переменные присвоенны -->
 	<section>
 		<div class="percentHeader titleStyle mainTag">
 			<h2>Процентные вычесления</h2>
@@ -45,33 +85,70 @@
 		<div class="percentBlock mainBlockStyle hiddenBlock">
 			<div>
 				<h3>Cколько процентов занимет число <span class="styleVariable">a</span> от числа <span class="styleVariable">b</span></h3>
-				<input type="text" class="countA">
-				<input type="text"  class="countB">
+				<label>Число (a): </label><input type="text" class="countAA styleInput">
+				<label>Число (b): </label><input type="text"  class="countAB styleInput">
 				<button id="percentVersionA" class="btnStyle">Расчитать</button>
+				<div class="resultBlock" id="resultVersionA">
+					<p>Число <span class="styleresVar" id="percentVerAA"></span> от числа <span class="styleresVar" id="percentVerAB"></span> составляет <span class="styleresult" id="resultPercentVerA"></span></p>
+				</div>
+				<div class="errorBlock" id="errorPercentVersionA">
+					<p>Для вычисления необходимо заполнить все поля!</p>
+				</div>
 			</div>
+
 			<div>
 				<h3>Насколько процентов число <span class="styleVariable">a</span> меньше числа <span class="styleVariable">b</span></h3>
-				<input type="text" class="countA">
-				<input type="text"  class="countB">
+				<label>Число (a): </label><input type="text" class="countBA styleInput">
+				<label>Число (b): </label><input type="text"  class="countBB styleInput">
 				<button id="percentVersionB" class="btnStyle">Расчитать</button>
+				<div class="resultBlock" id="resultVersionB">
+					<p>Число <span class="styleresVar" id="percentVerBA"></span> от числа <span class="styleresVar" id="percentVerBB"></span> составляет <span class="styleresult" id="resultPercentVerB"></span></p>
+				</div>
+				<div class="errorBlock" id="errorPercentVersionB">
+					<p>Для вычисления необходимо заполнить все поля!</p>
+				</div>
 			</div>
+
 			<div>
-				<h3>Чему будет равно число, если оно составляет <span class="styleVariable">a%</span> от числа <span class="styleVariable">b</span></h3>
-				<input type="text" class="countA">
-				<input type="text"  class="countB">
+				<h3>Насколько процентов число <span class="styleVariable">a</span> больше числа <span class="styleVariable">b</span></h3>
+				<label>Число (a): </label><input type="text" class="countCA styleInput">
+				<label>Число (b): </label><input type="text"  class="countCB styleInput">
 				<button id="percentVersionC" class="btnStyle">Расчитать</button>
+				<div class="resultBlock" id="resultVersionC">
+					<p>Число <span class="styleresVar" id="percentVerCA"></span> от числа <span class="styleresVar" id="percentVerCB"></span> составляет <span class="styleresult" id="resultPercentVerC"></span></p>
+				</div>
+				<div class="errorBlock" id="errorPercentVersionC">
+					<p>Для вычисления необходимо заполнить все поля!</p>
+				</div>
 			</div>
+
 			<div>
-				<h3>Найти число x если <span class="styleVariable">a%</span> от этого числа равны <span class="styleVariable">b</span></h3>
-				<input type="text" class="countA">
-				<input type="text"  class="countB">
+				<h3>Чему будет равно число <span class="styleVariable">x</span>, если оно составляет <span class="styleVariable">a %</span> от числа <span class="styleVariable">b</span></h3>
+				<label>Процент (a): </label><input type="text" class="countDA styleInput">
+				<label>Число (b): </label><input type="text"  class="countDB styleInput">
 				<button id="percentVersionD" class="btnStyle">Расчитать</button>
+				<div class="resultBlock" id="resultVersionD">
+					<p>Число <span class="styleresVar" id="percentVerDA"></span> от числа <span class="styleresVar" id="percentVerDB"></span> составляет <span class="styleresult" id="resultPercentVerD"></span></p>
+				</div>
+				<div class="errorBlock" id="errorPercentVersionD">
+					<p>Для вычисления необходимо заполнить все поля!</p>
+				</div>
+			</div>
+
+			<div>
+				<h3>Найти число <span class="styleVariable">x</span>, если <span class="styleVariable">a %</span> от этого числа равно <span class="styleVariable">b</span></h3>
+				<label>Процент (a): </label><input type="text" class="countEA styleInput">
+				<label>Число (b): </label><input type="text"  class="countEB styleInput">
+				<button id="percentVersionE" class="btnStyle">Расчитать</button>
+				<div class="resultBlock" id="resultVersionE">
+					<p>Число <span class="styleresVar" id="percentVerEA"></span> от числа <span class="styleresVar" id="percentVerEB"></span> составляет <span class="styleresult" id="resultPercentVerE"></span></p>
+				</div>
+				<div class="errorBlock" id="errorPercentVersionE">
+					<p>Для вычисления необходимо заполнить все поля!</p>
+				</div>
 			</div>
 		</div>
 	</section>
-
-
-
 
 
 
@@ -90,6 +167,14 @@
 			<div class="resultBlock" id="showResultRaisPow">
 				<p>Число <span class="styleresVar" id="raisPowA"></span> возведенное в степень <span class="styleresVar" id="raisPowB"></span> будет равно: <span class="styleresult" id="resultRaisedPower"></span></p>
 			</div>
+			<div class="errorBlock" id="errorRaisedPower">
+				<p>Для вычисления необходимо заполнить все поля!</p>
+			</div>			
+			<div class="errorBlock" id="errorRaisedPowerB">
+				<p>Значение степени не может быть отрицательным!</p>
+			</div>
+
+
 
 
 			<h3>Расчитать корень <span class="styleVariable">a</span> от числа <span class="styleVariable">b</span></h3>
@@ -98,6 +183,15 @@
 			<button id="calculateRoot" class="btnStyle">Расчитать</button>
 			<div class="resultBlock" id="showResultCalcRoot">
 				<p>Корень <span class="styleresVar" id="rootA"></span> из числа <span class="styleresVar" id="rootB"></span> будет равен: <span class="styleresult" id="resultRoot"></span></p>
+			</div>
+			<div class="errorBlock" id="errorCalculateRoot">
+				<p>Для вычисления необходимо заполнить все поля!</p>
+			</div>			
+			<div class="errorBlock" id="errorCalculateRootB">
+				<p>Значение корня не может быть отрицательным!</p>
+			</div>
+			<div class="errorBlock" id="errorCalculateRootС">
+				<p>Корень квадратный может извлечься только из числа больше 0!</p>
 			</div>
 
 		</div>
@@ -131,7 +225,7 @@
 
 			<div>
 				<p class="depositInputLabel">Пополенние: </p>
-				<select id="Replenish" class="styleInput">
+				<select id="replenish" class="styleInput">
 				  <option value="1">Нет</option>
 				  <option value="2">Раз в 1 мес.</option>
 				  <option value="3">Раз в 3 мес.</option>
@@ -150,7 +244,7 @@
 				  <option value="1">Рубль</option>
 				  <option value="2">Доллар США</option>
 				  <option value="3">Евро</option>
-				  <option value="4">Фунт стерлингов</option>
+				  <option value="4">Фунт стерлин.</option>
 				  <option value="5">Японская иена</option>
 				</select>
 			</div>
@@ -161,10 +255,14 @@
 			</div>
 
 			<button class="btnStyle" id="countDeposit">Расчитать</button>
-			<div id="resultCountDeposit"></div>
-			<div class="result" id="errorCountDeposit">Заполните все поля</div>
+			<div class="resultBlock" id="resultDeposit">
+				<p>Расчетная сумма инвестиций на заданный период будет ровна: <span class="styleresult" id="resultCountDeposit"></span></p>
+			</div>
+			<div class="errorBlock" id="errorCountDeposit">Заполните все поля!</div>
 		</div>
 	</section>
+
+
 
 
 
