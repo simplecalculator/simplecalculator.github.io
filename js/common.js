@@ -479,7 +479,7 @@ countDeposit.onclick = function() {
   sumDeposit += y
 }
 }
-}
+
 
 //выбор валюты
 if ( currency == 1) {
@@ -505,7 +505,7 @@ else if ( currency == 5) {
 document.getElementById('resultCountDeposit').innerHTML = results;
 document.getElementById('resultDeposit').style.display = "block";
 
-
+}
 }
 
 
