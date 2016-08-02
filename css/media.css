@@ -1,51 +1,280 @@
-/*==========  Desktop First Method  ==========*/
-
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-
-}
-
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 
+	.container {
+		width: 90%;
+	}
+
+	.calcBlock {
+		width: 40%;
+	}
+
+	.depositBlock .btnStyle {
+		display: inline-block;
+		margin-left: 35%;
+		margin-top: 20px;
+	}
+
+	.depositInputLabel {
+		display: inline-block;
+		width: 50%;
+	 }
+
+	.depositcalckBlock {
+		width: 40%;
+	}
+
+	.resultBlock,
+	.errorBlock {
+		width: 50%;
+	}
 }
+
+
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+		.container {
+		width: 100%;
+	}
+
+	h2 {
+		font-size: 20px;
+		padding: 25px 0;
+	}
+
+	h3 {
+		text-align: center;
+	}
+
+	.mainBlockStyle {
+		padding: 10px 0 30px 30px;
+		margin-bottom: 10px;
+	}
+
+	.styleVariable,
+	.styleresVar {
+		font-size: 16px;
+	}
+	.styleresult {
+		font-size: 18px;
+	}
+
+	.calcBlock {
+		width: 45%;
+		padding: 10px;
+		margin: 0 auto;
+	}
+
+	.depositcalckBlock {
+		width: 55%;
+		margin: 0 auto;
+		padding: 20px;
+	}
+
+	.resultBlock,
+	.errorBlock {
+		width: 60%;
+		text-align: center;
+	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	body {
+		font-size: 14px;
+		min-height:250px;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	h2 {
+		font-size: 16px;
+	}
+
+	h3 {
+		font-size: 14px;
+		padding: 0;
+	}
+
+	.styleInput {
+		display: block;
+		margin: 0 auto;
+		width: 35%;
+	}
+
+	label {
+	text-align: center;
+	display: block;
+	margin: 5px;
+	}
+
+	.styleVariable {
+		font-size: 15px;
+	}
+
+	.calcBlock {
+		width: 70%;
+	}
+
+	.depositBlock .btnStyle {
+		display: inline-block;
+		margin-left: 35%;
+		margin-top: 20px;
+	}
+
+	.depositInputLabel {
+		display: inline-block;
+		width: 50%;
+	 }
+
+	.mainBlockStyle {
+		padding: 20px 10px;
+		margin-bottom: 5px;
+
+	}
+
+	.depositcalckBlock {
+		width: 75%;
+		margin: 0 auto;
+	}
+
+	.resultBlock,
+	.errorBlock {
+		width: 70%;
+		margin: 15px auto 0;
+		text-align: center;
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+
+	.styleresVar {
+		font-size: 14px;
+	}
+
+	.styleresult {
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	.btnStyle {
+		display: block;
+		padding: 10px;
+		margin: 8px auto;
+	}
+
+	.depositInputLabel {
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin: 5px 0;
+	 }
+
+	#reinvestment {
+		margin-left: 40%;
+	}
 
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-}
 
+	body {
+		font-size: 14px;
+		min-height:250px;
+	}
 
-/*==========  Mobile First Method  ==========*/
+	.container {
+		width: 100%;
+	}
 
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
+	h2 {
+		font-size: 16px;
+		padding-left: 7px;
+		padding-right: 7px;
+	}
 
-}
+	h3 {
+		font-size: 14px;
+		padding: 0;
+	}
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
-}
+	.styleInput {
+		display: block;
+		margin: 0 auto;
+		width: 50%;
+	}
 
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
+	label {
+	text-align: center;
+	display: block;
+	margin: 5px;
+	}
 
-}
+	.styleVariable {
+		font-size: 15px;
+	}
 
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
+	.calcBlock {
+		width: 80%;
+	}
 
-}
+	.depositBlock .btnStyle {
+		display: inline-block;
+		margin-left: 35%;
+		margin-top: 20px;
+	}
 
- /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
+	.depositInputLabel {
+		display: inline-block;
+		width: 50%;
+	 }
 
+	.mainBlockStyle {
+		padding: 20px 10px;
+		margin-bottom: 5px;
+	}
+
+	.depositcalckBlock {
+		width: 85%;
+		margin: 0 auto;
+	}
+
+	.resultBlock,
+	.errorBlock {
+		width: 80%;
+		margin: 15px auto 0;
+		text-align: center;
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+
+	.styleresVar {
+		font-size: 14px;
+	}
+
+	.styleresult {
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	.btnStyle {
+		display: block;
+		padding: 10px;
+		margin: 8px auto;
+	}
+
+	.depositInputLabel {
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin: 5px 0;
+	 }
+
+	#reinvestment {
+		margin-left: 45%;
+	}
 }

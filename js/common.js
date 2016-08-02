@@ -1,45 +1,94 @@
 
 // Показывает скрытые блоки
-// window.onload = function () {
-//     var titleBlock = document.querySelector('.mainTag');
-//     var contentBlock = document.querySelector('.hiddenBlock');
+    var titleBlockA = document.querySelector('.calculator');
+    var contentBlockA = document.querySelector('.calculator-hidden');
 
-//     titleBlock.addEventListener('click', function () {
-//         if ('none' == contentBlock.style.display) {
-//             contentBlock.style.display = 'block';
-//             titleBlock.style.marginBottom = '0';
-//             titleBlock.style.borderRadius = '10px 10px 0 0';
-//             }
+    titleBlockA.addEventListener('click', function () {
+        if ('none' == contentBlockA.style.display) {
+            contentBlockA.style.display = 'block';
+            titleBlockA.style.marginBottom = '0';
+            titleBlockA.style.borderRadius = '10px 10px 0 0';
+            }
     
-//         else {
-//         	contentBlock.style.display = 'none';
-//             titleBlock.style.marginBottom = '7px';
-//             titleBlock.style.borderRadius = '10px';
+        else {
+        	contentBlockA.style.display = 'none';
+            titleBlockA.style.marginBottom = '7px';
+            titleBlockA.style.borderRadius = '10px';
         	
-//         }
-//     });
-// };
+        }
+    });
 
-// window.onload = function () {
-//     var spoiler_list = document.querySelectorAll('.mainTag');
+    var titleBlockB = document.querySelector('.numberSystem');
+    var contentBlockB = document.querySelector('.numberSystemBlock');
+
+    titleBlockB.addEventListener('click', function () {
+        if ('none' == contentBlockB.style.display) {
+            contentBlockB.style.display = 'block';
+            titleBlockB.style.marginBottom = '0';
+            titleBlockB.style.borderRadius = '10px 10px 0 0';
+            }
     
-//     for (var i in spoiler_list) {
-//         // скрываем основное содержимое спойлера
-//         spoiler_list[i].querySelector('.hiddenBlock').style.display = 'none';
-        
-//         // вешаем событие на каждый спойлер
-//         spoiler_list[i].addEventListener('click', function (a) {
-//             // стили текущего элемента
-//             var elemstyle = a.currentTarget.querySelector('.hiddenBlock').style;
-            
-//             if ( 'none' == elemstyle.display ) {
-//                 elemstyle.display = 'block';
-//             }   else {
-//                 elemstyle.display = 'none';
-//             }
-//         });
-//     }
-// };
+        else {
+          contentBlockB.style.display = 'none';
+            titleBlockB.style.marginBottom = '7px';
+            titleBlockB.style.borderRadius = '10px';
+          
+        }
+    });
+
+    var titleBlockC = document.querySelector('.percentHeader');
+    var contentBlockC = document.querySelector('.percentBlock');
+
+    titleBlockC.addEventListener('click', function () {
+        if ('none' == contentBlockC.style.display) {
+            contentBlockC.style.display = 'block';
+            titleBlockC.style.marginBottom = '0';
+            titleBlockC.style.borderRadius = '10px 10px 0 0';
+            }
+    
+        else {
+          contentBlockC.style.display = 'none';
+            titleBlockC.style.marginBottom = '7px';
+            titleBlockC.style.borderRadius = '10px';
+          
+        }
+    });
+
+    var titleBlockD = document.querySelector('.powerHeader');
+    var contentBlockD = document.querySelector('.powerBlock');
+
+    titleBlockD.addEventListener('click', function () {
+        if ('none' == contentBlockD.style.display) {
+            contentBlockD.style.display = 'block';
+            titleBlockD.style.marginBottom = '0';
+            titleBlockD.style.borderRadius = '10px 10px 0 0';
+            }
+    
+        else {
+          contentBlockD.style.display = 'none';
+            titleBlockD.style.marginBottom = '7px';
+            titleBlockD.style.borderRadius = '10px';
+          
+        }
+    });
+
+    var titleBlockE = document.querySelector('.depositHeader');
+    var contentBlockE = document.querySelector('.depositBlock');
+
+    titleBlockE.addEventListener('click', function () {
+        if ('none' == contentBlockE.style.display) {
+            contentBlockE.style.display = 'block';
+            titleBlockE.style.marginBottom = '0';
+            titleBlockE.style.borderRadius = '10px 10px 0 0';
+            }
+    
+        else {
+          contentBlockE.style.display = 'none';
+            titleBlockE.style.marginBottom = '7px';
+            titleBlockE.style.borderRadius = '10px';
+          
+        }
+    });
 
 
 
@@ -48,14 +97,80 @@
 
 
 
+//Калькулятор
+//Ввод чисел и расчет
+  button0.onclick = function() {
+    cakculateInput.value += '0';
+ };
+  button1.onclick = function() {
+    cakculateInput.value += '1';
+ };
+   button2.onclick = function() {
+    cakculateInput.value += '2';
+ };
+   button3.onclick = function() {
+    cakculateInput.value += '3';
+ };
+   button4.onclick = function() {
+    cakculateInput.value += '4';
+ };
+   button5.onclick = function() {
+    cakculateInput.value += '5';
+ };
+   button6.onclick = function() {
+    cakculateInput.value += '6';
+ };
+   button7.onclick = function() {
+    cakculateInput.value += '7';
+ };
+    button8.onclick = function() {
+    cakculateInput.value += '8';
+ };
+    button9.onclick = function() {
+    cakculateInput.value += '9';
+ };
+    dot.onclick = function() {
+      var calckScreen = document.getElementById('cakculateInput').value;
+      if ( calckScreen == '') {
+        cakculateInput.value += '0.'
+      }
+      else {
+    cakculateInput.value += '.';
+  }
+ };
+    bktLeft.onclick = function() {
+    cakculateInput.value += '(';
+ };
+    bktRight.onclick = function() {
+    cakculateInput.value += ')';
+ };
+    plus.onclick = function() {
+    cakculateInput.value += '+';
+ };
+    multiply.onclick = function() {
+    cakculateInput.value += '*';
+ };
+    minus.onclick = function() {
+    cakculateInput.value += '-';
+ };
+    divided.onclick = function() {
+    cakculateInput.value += '/';
+ };
 
+clear.onclick = function() {
+   cakculateInput.value = '';
+}
 
-
-
-
-
-
-
+equally.onclick = function() {
+  var calckScreen = document.getElementById('cakculateInput').value;
+  var results =  eval(calckScreen);
+  if (results == Infinity) {
+    cakculateInput.value = 'Нельзя делить на ноль';
+      }
+      else {
+        cakculateInput.value = results;    
+    }
+}
 
 //перевод из одной системы счисления в другую
 // проверка на пустые ячейки
@@ -225,8 +340,6 @@ raisedPower.onclick = function() {
  }
 }
 
-
-
 // функция вычисления корня.
 // проверка на пустые ячейки
 // проверка на знак корня; не равен (-)
@@ -259,12 +372,6 @@ calculateRoot.onclick = function() {
   document.getElementById('showResultCalcRoot').style.display = "block";
   }
 }
-
-
-
-
-
-
 
 // выичсление размера депозита с 
 // расчет с капитализацией раз в месяц или раз в год
@@ -334,15 +441,45 @@ countDeposit.onclick = function() {
 }
 }
 
-//капитализация процентов раз в год
+//начисление процентов в конце периода
   else {
-      for (var i = 0; i < term; i++) {
-      var y = (sumDeposit/100*percent);
+//проверка на пополнения, этот блок расчета без пополнения
+  if (refill == 1) {
+     var y = (sumDeposit/100*percent)*term;
 
-      sumDeposit += y;
+      sumDeposit += y
+    }
+ 
+
+// этот блок расчета пополнения раз в месяц
+  else if (refill == 2) {
+
+    for (var i = 0; i < (term*12); i++) {
+        sumDeposit += sumReplen;
   }
+   var y = (sumDeposit/100*percent)*term;
+  sumDeposit += y
 }
+// этот блок расчета пополнения раз в три месяца
+  else if (refill == 3) {
 
+    for (var i = 0; i < (term*4); i++) {
+        sumDeposit += sumReplen;
+  }
+   var y = (sumDeposit/100*percent)*term;
+  sumDeposit += y
+}
+// этот блок расчета пополнения раз в пол года
+  else if (refill == 4) {
+
+    for (var i = 0; i < (term*2); i++) {
+        sumDeposit += sumReplen;
+  }
+   var y = (sumDeposit/100*percent)*term;
+  sumDeposit += y
+}
+}
+}
 
 //выбор валюты
 if ( currency == 1) {
@@ -362,14 +499,13 @@ else if ( currency == 5) {
     currSymbol = ' ¥'; 
 }
 
-    results = sumDeposit + currSymbol;
+    results = sumDeposit.toFixed(2) + currSymbol;
 
 
 document.getElementById('resultCountDeposit').innerHTML = results;
 document.getElementById('resultDeposit').style.display = "block";
 
 
-}
 }
 
 

@@ -6,64 +6,59 @@
   <link rel="shortcut icon" href="img/favicon.png" type="image/jpg">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/media.css">
   <link href='https://fonts.googleapis.com/css?family=Comfortaa:700|Droid+Serif:400italic|PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 </head>
 <body>
 <div class="container">
 	<section>
-		<div class="calculator titleStyle mainTag">
+		<div class="calculator titleStyle">
 			<h2>Калькулятор</h2>
 		</div>
-		<div class="calculator-hidden mainBlockStyle hiddenBlock">
+		<div class="calculator-hidden mainBlockStyle">
 		<div class="calcBlock">
 			<div class="row">
-				<input type="text" id="cakculateInput" placeholder="0">
-				<button id="clear" value="" class="clearBtn">C</button>
+				<input type="text" id="cakculateInput" placeholder="0" class="cakcInputSt">
+				<button id="clear" class="clearBtn">C</button>
 			</div>
-
-
 			<div class="row">
-				<button id="button7" value="7" class="numberStyle">7</button>
-				<button id="button8" value="8" class="numberStyle">8</button>
-				<button id="button9" value="9" class="numberStyle">9</button>
+				<button id="button7" class="numberStyle">7</button>
+				<button id="button8" class="numberStyle">8</button>
+				<button id="button9" class="numberStyle">9</button>
 				<button id="plus" class="numberStyle">+</button>
 				<button id="multiply" class="numberStyle">*</button>
 			</div>
 			<div class="row">
-				<button id="button4" value="4" class="numberStyle">4</button>
-				<button id="button5" value="5" class="numberStyle">5</button>
-				<button id="button6" value="6" class="numberStyle">6</button>
+				<button id="button4" class="numberStyle">4</button>
+				<button id="button5" class="numberStyle">5</button>
+				<button id="button6" class="numberStyle">6</button>
 				<button id="minus" class="numberStyle">-</button>
 				<button id="divided" class="numberStyle">÷</button>
 			</div>
 			<div class="row">
-				<button id="button1" value="1" class="numberStyle">1</button>
-				<button id="button2" value="2" class="numberStyle">2</button>
-				<button id="button3" value="3" class="numberStyle">3</button>
-				<button id="bktLeft" value="(" class="numberStyle">(</button>
-				<button id="bktRight" value=")" class="numberStyle">)</button>
+				<button id="button1" class="numberStyle">1</button>
+				<button id="button2" class="numberStyle">2</button>
+				<button id="button3" class="numberStyle">3</button>
+				<button id="bktLeft" class="numberStyle">(</button>
+				<button id="bktRight" class="numberStyle">)</button>
 			</div>
 			<div class="row">
-				<button id="button0" value="0" class="numberStyle">0</button>
-				<button id="dot" value="." class="numberStyle">.</button>
+				<button id="button0" class="numberStyle">0</button>
+				<button id="dot" class="numberStyle">.</button>
 				<button id="equally" class="numberEqually">=</button>
 			</div>
 		</div>
 		</div>
 	</section>
-
-
-
-<!-- Все переменные присвоенны все работает-->
 	<section>
-		<div class="numberSystem titleStyle mainTag">
+		<div class="numberSystem titleStyle">
 			<h2>Перевод из одной системы счисления в другую</h2>
 		</div>
-		<div class="numberSystemBlock mainBlockStyle hiddenBlock">
+		<div class="numberSystemBlock mainBlockStyle">
 			<h3>Преобразование из системы счесления <span class="styleVariable">10</span> в систему счисления <span class="styleVariable">b</span></h3>
 			<label>Число (a): </label><input type="text" class="numberSystA styleInput">
-			<label>Система исчисления (b): </label><input type="text"  class="numberSystB styleInput">
+			<label>Система счисления (b): </label><input type="text"  class="numberSystB styleInput">
 			<button id="changeNumbSystem" class="btnStyle">Расчитать</button>
 			<div class="resultBlock" id="resultchangeNumbSystem">
 				<p>Число <span class="styleresVar" id="changeNumbA"></span> в системе исчисления <span class="styleresVar" id="changeNumbB"></span> будет выглядеть: <span class="styleresult" id="changeNumbResult"></span></p>
@@ -73,16 +68,11 @@
 			</div>
 		</div>
 	</section>
-
-
-
-
-<!-- Все переменные присвоенны -->
 	<section>
-		<div class="percentHeader titleStyle mainTag">
+		<div class="percentHeader titleStyle">
 			<h2>Процентные вычесления</h2>
 		</div>
-		<div class="percentBlock mainBlockStyle hiddenBlock">
+		<div class="percentBlock mainBlockStyle">
 			<div>
 				<h3>Cколько процентов занимет число <span class="styleVariable">a</span> от числа <span class="styleVariable">b</span></h3>
 				<label>Число (a): </label><input type="text" class="countAA styleInput">
@@ -149,17 +139,11 @@
 			</div>
 		</div>
 	</section>
-
-
-
-
-
-<!-- Все переменные присвоенны -->
 	<section>
-		<div class="powerHeader titleStyle mainTag">
+		<div class="powerHeader titleStyle">
 			<h2>Возведение в степень и корень</h2>
 		</div>
-		<div class="powerBlock mainBlockStyle hiddenBlock">
+		<div class="powerBlock mainBlockStyle">
 			<h3>Возвести число <span class="styleVariable">a</span> в степень <span class="styleVariable">b</span></h3>
 			<label>Число (a): </label><input type="text" class="raisPowA styleInput">
 			<label>Степень (b): </label><input type="text"  class="raisPowB styleInput">
@@ -173,9 +157,6 @@
 			<div class="errorBlock" id="errorRaisedPowerB">
 				<p>Значение степени не может быть отрицательным!</p>
 			</div>
-
-
-
 
 			<h3>Расчитать корень <span class="styleVariable">a</span> от числа <span class="styleVariable">b</span></h3>
 			<label>Корень (a): </label><input type="text" class="calcRootA styleInput">
@@ -193,95 +174,71 @@
 			<div class="errorBlock" id="errorCalculateRootС">
 				<p>Корень квадратный может извлечься только из числа больше 0!</p>
 			</div>
-
 		</div>
 	</section>
-
-
-
-
-
-<!-- Все переменные присвоенны -->
 	<section>
-		<div class="depositHeader titleStyle mainTag">
+		<div class="depositHeader titleStyle">
 			<h2>Депозитный и кредитный калькулятор</h2>
 		</div>
-		<div class="depositBlock mainBlockStyle hiddenBlock">
+		<div class="depositBlock mainBlockStyle">
 			<h3>Рассчет доходности депозита за период</h3>
-			<div>	
-				<p class="depositInputLabel">Начальная сумма инвестиций: </p>
-				<input type="text" id="deposit" placeholder="Сумма.." class="styleInput">
-			</div>
+			<div class="depositcalckBlock">
+				<div>	
+					<p class="depositInputLabel">Начальная сумма инвестиций: </p>
+					<input type="text" id="deposit" placeholder="Сумма.." class="styleInput">
+				</div>
 
-			<div>
-				<p class="depositInputLabel">Доходность инвестиций: </p>
-				<input type="text" id="percent" placeholder="Ствка.."  class="styleInput">
-			</div>
+				<div>
+					<p class="depositInputLabel">Доходность инвестиций: </p>
+					<input type="text" id="percent" placeholder="Ствка.."  class="styleInput">
+				</div>
 
-			<div>
-				<p class="depositInputLabel">Срок вклада (лет):</p>
-				<input type="text" id="term" placeholder="Срок.." class="styleInput">
-			</div>
+				<div>
+					<p class="depositInputLabel">Срок вклада (лет):</p>
+					<input type="text" id="term" placeholder="Срок.." class="styleInput">
+				</div>
 
-			<div>
-				<p class="depositInputLabel">Пополенние: </p>
-				<select id="replenish" class="styleInput">
-				  <option value="1">Нет</option>
-				  <option value="2">Раз в 1 мес.</option>
-				  <option value="3">Раз в 3 мес.</option>
-				  <option value="4">Раз в 6 мес.</option>
-				</select>
-			</div>
+				<div>
+					<p class="depositInputLabel">Пополенние: </p>
+					<select id="replenish" class="styleInput">
+					  <option value="1">Нет</option>
+					  <option value="2">Раз в 1 мес.</option>
+					  <option value="3">Раз в 3 мес.</option>
+					  <option value="4">Раз в 6 мес.</option>
+					</select>
+				</div>
 
-			<div>
-				<p class="depositInputLabel">Сумма пополнения: </p>
-				<input type="text" id="sumReplenish" placeholder="Пополнение.." class="styleInput">
-			</div>
+				<div>
+					<p class="depositInputLabel">Сумма пополнения: </p>
+					<input type="text" id="sumReplenish" placeholder="Пополнение.." class="styleInput">
+				</div>
 
-			<div>
-				<p class="depositInputLabel">Денежная единица:</p>
-				<select id="currency" class="styleInput">
-				  <option value="1">Рубль</option>
-				  <option value="2">Доллар США</option>
-				  <option value="3">Евро</option>
-				  <option value="4">Фунт стерлин.</option>
-				  <option value="5">Японская иена</option>
-				</select>
-			</div>
+				<div>
+					<p class="depositInputLabel">Денежная единица:</p>
+					<select id="currency" class="styleInput">
+					  <option value="1">Рубль</option>
+					  <option value="2">Доллар США</option>
+					  <option value="3">Евро</option>
+					  <option value="4">Фунт стерлин.</option>
+					  <option value="5">Японская иена</option>
+					</select>
+				</div>
 
-			<div>
-				<p class="depositInputLabel">Капитализация вклада: </p>
-				<input type="checkbox" id="reinvestment" checked>
-			</div>
+				<div>
+					<p class="depositInputLabel">Капитализация вклада: </p>
+					<input type="checkbox" id="reinvestment" checked>
+				</div>
 
-			<button class="btnStyle" id="countDeposit">Расчитать</button>
+				<button class="btnStyle" id="countDeposit">Расчитать</button>
+			</div>
 			<div class="resultBlock" id="resultDeposit">
 				<p>Расчетная сумма инвестиций на заданный период будет ровна: <span class="styleresult" id="resultCountDeposit"></span></p>
 			</div>
-			<div class="errorBlock" id="errorCountDeposit">Заполните все поля!</div>
-		</div>
-	</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+			<div class="errorBlock" id="errorCountDeposit">Заполните все поля!
+			</div>
 		</div>
 	</section>
 </div>
-
 
 <script type="text/javascript" src="js/common.js"></script>
 
