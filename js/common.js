@@ -1,4 +1,4 @@
-
+window.onload = function(){
 // Показывает скрытые блоки
     var titleBlockA = document.querySelector('.calculator');
     var contentBlockA = document.querySelector('.calculator-hidden');
@@ -89,7 +89,7 @@
           
         }
     });
-
+};
 
 
 
