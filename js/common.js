@@ -4,7 +4,7 @@ window.onload = function(){
     var contentBlockA = document.querySelector('.calculator-hidden');
 
     titleBlockA.addEventListener('click', function () {
-        if ('none' == contentBlockA.style.display) {
+        if (getComputedStyle(contentBlockA).display == 'none') {
             contentBlockA.style.display = 'block';
             titleBlockA.style.marginBottom = '0';
             titleBlockA.style.borderRadius = '10px 10px 0 0';
@@ -22,7 +22,7 @@ window.onload = function(){
     var contentBlockB = document.querySelector('.numberSystemBlock');
 
     titleBlockB.addEventListener('click', function () {
-        if ('none' == contentBlockB.style.display) {
+        if (getComputedStyle(contentBlockB).display == 'none') {
             contentBlockB.style.display = 'block';
             titleBlockB.style.marginBottom = '0';
             titleBlockB.style.borderRadius = '10px 10px 0 0';
@@ -40,7 +40,7 @@ window.onload = function(){
     var contentBlockC = document.querySelector('.percentBlock');
 
     titleBlockC.addEventListener('click', function () {
-        if ('none' == contentBlockC.style.display) {
+        if (getComputedStyle(contentBlockC).display == 'none') {
             contentBlockC.style.display = 'block';
             titleBlockC.style.marginBottom = '0';
             titleBlockC.style.borderRadius = '10px 10px 0 0';
@@ -58,7 +58,7 @@ window.onload = function(){
     var contentBlockD = document.querySelector('.powerBlock');
 
     titleBlockD.addEventListener('click', function () {
-        if ('none' == contentBlockD.style.display) {
+        if (getComputedStyle(contentBlockD).display == 'none') {
             contentBlockD.style.display = 'block';
             titleBlockD.style.marginBottom = '0';
             titleBlockD.style.borderRadius = '10px 10px 0 0';
@@ -76,7 +76,7 @@ window.onload = function(){
     var contentBlockE = document.querySelector('.depositBlock');
 
     titleBlockE.addEventListener('click', function () {
-        if ('none' == contentBlockE.style.display) {
+        if (getComputedStyle(contentBlockE).display == 'none') {
             contentBlockE.style.display = 'block';
             titleBlockE.style.marginBottom = '0';
             titleBlockE.style.borderRadius = '10px 10px 0 0';
